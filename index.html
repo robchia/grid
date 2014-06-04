@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="A minimal, responsive CSS grid system">
+	<title>GRID</title>
+	<link rel="stylesheet" href="css/zero.css" type="text/css" />
+	<link rel="stylesheet" href="css/grid.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/ui.css" type="text/css" />
+	<link rel="stylesheet" href="css/screen.css" type="text/css" />
+</head>
+<body>
+
+<div class="grid">
+	<div class="l-1 header">
+		<h1><a href="/">GRID</a></h1>
+		<h3>A minimal, responsive CSS grid system</h3>
+	</div>
+
+	<div class="l-1 fill">
+		<h4>Browser size</h4>
+		<div class="c-1">
+			<div class="content">
+				<div id="device-hi-res">Hi-res</div>
+				<div id="device-large">Large</div>
+				<div id="device-desktop">Desktop</div>
+				<div id="device-tablet-portrait">Tablet Portrait</div>
+				<div id="device-mobile-landscape">Mobile Landscape</div>
+				<div id="device-mobile">Mobile</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="l-2 fill">
+		<h4>2 columns</h4>
+		<div class="c-1">
+			<div class="content">c-1</div>
+		</div>
+		<div class="c-2">
+			<div class="content">c-2</div>
+		</div>
+	</div>
+
+	<div class="l-3 fill">
+		<h4>3 columns</h4>
+		<div class="c-1">
+			<div class="content">c-1</div>
+		</div>
+		<div class="c-2">
+			<div class="content">c-2</div>
+		</div>
+		<div class="c-3">
+			<div class="content">c-3</div>
+		</div>
+	</div>
+
+	<div class="l-5 fill">
+		<h4>5 columns</h4>
+		<div class="c-1">
+			<div class="content">c-1</div>
+		</div>
+		<div class="c-2">
+			<div class="content">c-2</div>
+		</div>
+		<div class="c-3">
+			<div class="content">c-3</div>
+		</div>
+		<div class="c-4">
+			<div class="content">c-4</div>
+		</div>
+		<div class="c-5">
+			<div class="content">c-5</div>
+		</div>
+		<div class="c-1 g-3">
+			<div class="content">c-1 g-3</div>
+		</div>
+		<div class="c-2 g-2">
+			<div class="content">c-2 g-2</div>
+		</div>
+	</div>
+
+	<div class="l-1">
+		<h4>Code example</h4>
+		<div class="c-1">
+			<pre>&lt;div class="grid"&gt;
+
+	&lt;!-- specify column size with l-* --&gt;
+	&lt;div class="l-4"&gt;
+		&lt;!-- specify column with c-* --&gt;
+		&lt;div class="c-1"&gt;
+			&lt;div class="content"&gt;column 1&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="c-2"&gt;
+			&lt;div class="content"&gt;column 2&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="c-3"&gt;
+			&lt;div class="content"&gt;column 3&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="c-4"&gt;
+			&lt;div class="content"&gt;column 4&lt;/div&gt;
+		&lt;/div&gt;
+		
+		&lt;!-- you can group columns with g-* --&gt;
+		&lt;div class="c-1 g-3"&gt;
+			&lt;div class="content"&gt;3-column group&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="c-2"&gt;
+			&lt;div class="content"&gt;1 column&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;div&gt;</pre>
+		</div>
+	</div>
+	
+	<div class="l-4 fill">
+		<h4>Which produces:</h4>
+		<div class="c-1">
+			<div class="content">column 1</div>
+		</div>
+		<div class="c-2">
+			<div class="content">column 2</div>
+		</div>
+		<div class="c-3">
+			<div class="content">column 3</div>
+		</div>
+		<div class="c-4">
+			<div class="content">column 4</div>
+		</div>
+		
+		<!-- you can group columns with g-* -->
+		<div class="c-1 g-3">
+			<div class="content">3-column group</div>
+		</div>
+		<div class="c-2">
+			<div class="content">1 column</div>
+		</div>
+	</div>
+
+	<div id="download" class="l-1">
+		<div class="c-1">
+			<div class="content">
+				<a href="https://github.com/robchia/grid/archive/master" class="button outlined">Download .zip</a><br />
+				<a href="https://github.com/robchia/grid">View on GitHub</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer" class="l-1">
+		<div class="c-1">
+			<div class="content">
+				<div class="title">Made by</div>
+				<a href="https://twitter.com/robchia">Rob Chia</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

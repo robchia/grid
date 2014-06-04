@@ -1,0 +1,145 @@
+/*@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700);
+
+html
+{
+	background-color: #fff;
+}
+
+body,
+input,
+textarea
+{
+	font-family: "Roboto Condensed", Helvetica, sans-serif;
+	text-rendering: optimizeLegibility;
+}
+
+.grid
+{
+	text-align: center;
+}
+
+.fill .c-1, .fill .c-2, .fill .c-3, .fill .c-4, .fill .c-5, .fill .c-6
+{
+	background-color: #ddd;
+}
+
+#device-hi-res,
+#device-large,
+#device-desktop,
+#device-tablet-portrait,
+#device-mobile-landscape,
+#device-mobile
+{
+	display: none;
+}
+
+#download
+{
+	margin-top: 2em;
+}
+
+#download a.button
+{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+.header
+{
+	margin: 3em 0;
+}
+
+.header h1
+{
+	margin: 0;
+	font-size: 3em;
+}
+
+.header h3
+{
+	font-weight: lighter;
+	letter-spacing: 1px;
+	margin: 0;
+}
+
+.header a,
+.header a:visited
+{
+	border: none;
+}
+
+.header a:hover
+{
+	color: #555;
+}
+
+.title
+{
+	font-weight: lighter;
+	letter-spacing: 1px;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6
+{
+	margin: 0;
+}
+
+#footer
+{
+	margin: 1.5em 0;
+}
+
+@media screen and (min-width: 1801px) and (max-width: 8000px)
+{
+	#device-hi-res
+	{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1800px)
+{
+	#device-large
+	{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 980px) and (max-width: 1249px)
+{
+	#device-desktop
+	{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px)
+{
+	#device-tablet-portrait
+	{
+		display: block;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px)
+{
+	#device-mobile-landscape
+	{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 479px)
+{
+	#device-mobile
+	{
+		display: block;
+	}
+}
